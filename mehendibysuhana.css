@@ -4,13 +4,16 @@
     box-sizing: border-box;
     font-family:sans-serif;
 }
+html{
+    overflow-x: hidden;
+    width: 100%;
+}
 body{
     min-height: 100vh;
     width: 100%;
     background-color: #556b2f;
     padding-top: 60px;
-    display: flex;
-    align-items: center;
+    overflow-x: hidden;
 }
 header{
     height:75px;
@@ -416,7 +419,7 @@ label{
     padding-left: 1.5rem;
 }
 /*booking section ends*/
-@media(max-width:600px){
+@media(max-width:400px){
     body{
         flex-direction: column;
         padding-top: 75px;
@@ -527,7 +530,7 @@ label{
     }
     .service-container {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
         gap: 1rem;
         justify-content: center;
         padding: 1rem;
